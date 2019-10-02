@@ -1,0 +1,426 @@
+﻿body {
+    /*font-family: sans-serif; */
+    font-style: normal;
+	font-size: 12px;
+    margin: 0px;
+	/*background-image: url('Images/Background.jpg');*/
+	overflow: hidden;
+	/*height: 100%; */
+	background-color: #000;
+}
+
+.backgroundAnimation{
+	height: 736px;
+    width: 414px;
+	/*background-color: red;*/
+	margin: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.table {
+	height: 40px;
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+	margin-top: 8px;
+	position: absolute;
+	bottom: 0;
+	z-index: 6;
+}
+
+ul#horizontal-list {
+	min-width: 300px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+
+
+ul{
+    display:inline;
+	margin: 0 auto;
+}
+
+#textInput {
+  	width: 200px;
+  	height: 100px;
+	background-color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.toggle {
+	z-index: 10;
+	width: 100px;
+    background-color: #E24C82; /* Green */
+    border: none;	
+	border-radius:315px;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.resetButton {
+	background-color: #E24C82;
+}
+
+.toggle:hover{
+	font-size: 16px;
+}
+
+#temporary {
+   	z-index: 5;
+	position: absolute;
+	width: 414px;
+	margin-top: 50%;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+	display: table;
+  	margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#header {
+   height: 120px;
+   box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+    background-color: white;
+    z-index: 4; 
+	position: absolute;
+}
+
+.headerSection {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.headerSection p {
+     margin: 0 0 0 0;
+}
+
+ /* --------------------- CONTENT OF PLAY DIVS -------------------------------*/
+
+#section0{
+	
+}
+
+.canvas {
+    /*box-shadow: 0 10px 10px rgba(0,0,0,0.3);*/
+	margin: auto;
+	 position: fixed;  /*absolute; */
+	width: 100%;
+	right: 0;
+	left: 0;
+}
+
+#feedback {
+	width: 100%;
+	height: 20%;
+    background-color:white;
+    z-index:3;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.3);
+}
+
+#playerModal{
+	height: 100px;
+	width: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;   
+	z-index: 1;
+	padding: 16px 0 0 16px;
+	position: absolute;
+}
+
+#playerModal img{
+	/* height: 80px; width: 80px;*/
+	width: 8%;
+	min-width: 48px; /* 80px */
+	border-radius: 8px;
+	float: left;
+}
+
+#playerIcon {
+	box-shadow: 0 2px 4px rgba(45,45,45,0.3);
+}
+
+#sections{
+}
+
+
+.autoScale {
+    height: auto;
+}
+
+#overlay {
+    z-index: 2;
+	position: absolute;
+    top: 50%;
+    width: 100%;
+    height: auto; 
+    margin: 0 auto;
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 20px;    
+  }
+}
+	
+ /* --------------------- MORE -------------------------------*/
+
+h2, h3, p {
+    margin: 0px 0px 8px 8px;
+	font-family:Tahoma, Arial, sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+h3 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+	margin: 16px 32px 0 0;
+	font-weight: bold;
+	font-size: 2vw;
+	text-shadow: 0px 2px 4px #454545;
+}
+
+/*
+h3 {
+	float: right;
+	color: #fff;
+	margin: 0 32px 0 0;
+	font-weight: bold;
+	font-size: 24px;
+	text-shadow: 0px 2px 4px #454545;
+}
+*/
+
+h2 {
+	/* font-size: 14px;
+	line-height: 20px;
+	*/
+	font-size: 1.6vw;
+	font-weight: bold;
+	text-shadow: 0px 2px 4px #454545;
+	line-height: 2vw;
+	color: #fff;
+	display: inline;
+}
+
+@media (max-width: 700px) {
+  h2{
+    /* Minimum font size */
+    font-size: 14px
+  }  
+  h3{
+    /* Minimum font size */
+    font-size: 24px;
+  }
+}
+
+h1 {
+    margin: 0 0 0 0;
+	font-size: 22px;
+}
+
+/*  ---------------------------  Set Input Types ------------------------------------  */
+
+input {
+  font-family:Century Gothic, Arial, sans-serif;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-weight: lighter;
+  font-size: 1em;
+}
+
+/* Not used */
+.fa-3x {
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.fa-2x {
+    color: white;
+    opacity: .5;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.fa-chevron-left {
+	margin: 0 0 0 16px;
+}
+
+.fa-chevron-right {
+	float: right;
+	margin: 0 16px 0 0;
+}
+
+.fa {
+	color:#fff;
+	text-shadow: 0px 2px 4px #454545;
+}
+
+
+/*  ---------------------------  Colors ------------------------------------  */
+
+.black {
+    font-size: 24px;
+    color: #000;
+}
+
+
+
+/*  ---------------------------  Health Bar ------------------------------------  */
+
+.health-bar {
+	/*
+	width: 160px;
+	height: 24px;
+	width: 30%;
+	*/
+  width: 25%;
+  min-width: 160px;
+  height: 3vw;
+  min-height: 24px;
+  margin-top: 8px;
+  border-radius: 0 8px 8px 0; 
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  /*
+	background: #000;
+	position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  */
+}
+
+.bar {
+  background: #417505;
+  width: 100%;
+  height: 100%;
+  transition: width .5s linear;
+  border-radius: 0 8px 8px 0; 
+  position:relative;
+}
+
+.hit {
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 8px 8px 0;
+  width: 0px;
+  transition: width .5s linear;
+	position: absolute;
+}
+
+/*  ---------------------------  Scroll Time Bar ------------------------------------  */
+
+#footer {
+	/* height: 50px; */
+    width:100%;
+    height: 5.5vw;
+	min-height: 48px;
+    z-index:3;
+    position: absolute;
+    bottom: 0;
+}
+
+#scrollBar {
+	/* height: 24px; */
+  width: 100%;
+  height: 50%;
+  min-height: 24px;
+  transition: width .5s linear;
+  background: rgba(0,0,0,0.5);
+  background-clip: content-box;
+  bottom: 0;
+  position:absolute;
+  box-shadow: 0 -1px 1px rgba(45,45,45,0.3);
+}
+
+.time-bar {
+  background: #fff;
+  width: 0%;
+  height: 100%;
+  transition: width .5s linear;
+  border-radius: 0 8px 8px 0; 
+  position:relative;
+}
+
+.time-tick {
+	background: white;
+	height: 100%;
+	width: 2px;
+	position: absolute;
+	z-index: 1;
+}
+
+#video-controls {
+  margin-left: 16px;
+}
+
+/*
+#footer {
+    width:100%;
+    height: 50px;
+    background-color:white;
+    z-index:3;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.3);
+}
+*/

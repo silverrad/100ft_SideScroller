@@ -1,0 +1,232 @@
+﻿body {
+    font-family: sans-serif;
+    font-style: normal;
+	font-size: 10px;
+    margin: 0px;
+	/*background-image: url('Images/Background.jpg');*/
+	overflow: hidden;
+	/*height: 100%; */
+	background-color: #000;
+}
+
+.backgroundAnimation{
+	height: 736px;
+    width: 414px;
+	/*background-color: red;*/
+	margin: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.table {
+	height: 40px;
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+	margin-top: 8px;
+	position: absolute;
+	bottom: 0;
+	z-index: 6;
+}
+
+ul#horizontal-list {
+	min-width: 300px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+
+
+ul{
+    display:inline;
+	margin: 0 auto;
+}
+
+#textInput {
+  	width: 200px;
+  	height: 100px;
+	background-color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.toggle {
+	z-index: 10;
+	width: 100px;
+    background-color: #E24C82; /* Green */
+    border: none;	
+	border-radius:315px;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.resetButton {
+	background-color: #E24C82;
+}
+
+.toggle:hover{
+	font-size: 16px;
+}
+
+#temporary {
+   	z-index: 5;
+	position: absolute;
+	width: 414px;
+	margin-top: 50%;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+	display: table;
+  	margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa {
+	display: table;
+  	margin: 0 auto;
+	margin-top: 40px;
+	margin-left: 40px;
+    z-index: 5;
+	position: absolute;
+	color:#fff;
+}
+
+#header {
+   /* height: 20%; */
+   height: 120px;
+   box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    width: 100%;
+    background-color: white;
+    z-index: 4; 
+}
+
+.headerSection {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.headerSection p {
+     margin: 0 0 0 0;
+}
+
+ /* --------------------- CONTENT OF PLAY DIVS -------------------------------*/
+
+#section0{
+	
+}
+
+.canvas {
+    /*box-shadow: 0 10px 10px rgba(0,0,0,0.3);*/
+	margin: auto;
+	 position: absolute;
+	width: 100%;
+	right: 0;
+	left: 0;
+}
+
+#feedback {
+	width: 100%;
+	height: 20%;
+    background-color:white;
+    z-index:3;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.3);
+}
+
+#footer {
+    width:100%;
+    height: 50px;
+    background-color:white;
+    z-index:3;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -10px 10px rgba(0,0,0,0.3);
+}
+
+#sections{
+}
+
+
+.autoScale {
+    height: auto;
+}
+
+#overlay {
+    z-index: 5;
+	position: absolute;
+    /* top: 0;  /* 50px; */
+    left: 0;
+    right: 0;
+    background-size:cover;
+    background-repeat:no-repeat; 
+    background-position: top;
+    width: 414px;
+    height: 414px;  /* 90%; */
+    margin: auto;
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 20px;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 20px;    
+  }
+}
+	
+ /* --------------------- MORE -------------------------------*/
+
+h2, h3, p {
+    margin: 10px 0px 20px 20px;
+
+}
+
+p {
+         font-size: 14px;
+}
+
+h1 {
+    margin: 0 0 0 0;
+}
+
+/*  ---------------------------  Set Input Types ------------------------------------  */
+
+input {
+  font-family:Century Gothic, Arial, sans-serif;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-weight: lighter;
+  font-size: 1em;
+}

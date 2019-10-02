@@ -1,0 +1,29 @@
+{"videos": ["Dancer.mp4", "Yama.mp4", "Rapper.mp4", "Camera.mp4"],
+ 	"songSelection": "ShortTest.mp3", 
+ 	"playerControls": false,
+ 	"startVideo": "Dancer.mp4",
+ "interactiveSegments": [
+	 {"startTime":19, "endTime":54}], 
+ "obstacles": [
+	 {"timestamp":20},
+	 {"timestamp":43},
+	 {"timestamp":87},
+	 {"timestamp":100}], 
+ "players": [
+		{"name" : "Nathaniel Chamberlain, 25", "image": "Player1.jpg", "rewardCount":0, "startVideo": "Dancer.mp4", "gateKeys": [0,1,2,3], "obstacleRewards": [], "videos": [
+			{"rewardCount": 0, "video": [
+				{"deathGate": 0, "url": "Dancer.mp4" } ]}]},
+		
+		{"name" : "Tory Smith, 32", "image": "Player2.jpg", "rewardCount":0, "startVideo": "Yama.mp4", "gateKeys": [0,1,2,3], "obstacleRewards": [], "videos": [
+			{"rewardCount": 0, "video": [
+				{"deathGate": 0, "url": "Yama.mp4" } ]}]},
+		
+		{"name" : "Lavar Johnson, 21", "image": "Player3.png", "rewardCount":0, "startVideo": "Rapper.mp4", "gateKeys": [0,1,2,3], "obstacleRewards": [], "videos": [
+			{"rewardCount": 0, "video": [
+				{"deathGate": 0, "url": "Rapper.mp4" } ]}]},
+	 
+	 {"name" : "Lavar Johnson, 21", "image": "Player4.png", "rewardCount":0, "startVideo": "Camera.mp4", "gateKeys": [0,1,2,3], "obstacleRewards": [], "videos": [
+			{"rewardCount": 0, "video": [
+				{"deathGate": 0, "url": "Camera.mp4" } ]}]}
+ ]
+}

@@ -1,0 +1,32 @@
+{"videos": ["AnimatedProof/1a.mp4", "AnimatedProof/2c.mp4", "AnimatedProof/3a.mp4"], 
+ 	"songSelection": "TomMischMovie.mp3", 
+ 	"startVideo": "AnimatedProof/1a.mp4",
+ 	"playerControls": true,
+ 	"interactiveSegments": [
+		{"startTime":3, "endTime":15},
+		{"startTime":20, "endTime":45},
+		{"startTime":50, "endTime":54}
+	], 
+ 	"obstacles": [
+		{"timestamp":15},
+		{"timestamp":46}
+	], 
+ 	"players": [
+		{"name" : "Melvin The Cat", "image": "Cat.png", "rewardCount":0, "startVideo": "AnimatedProof/0a.mp4", "gateKeys": [1], "obstacleRewards": [0, 0], "videos": [
+			{"rewardCount": 0, "video": [
+				{"deathGate": 0, "url": "AnimatedProof/0a.mp4" }, 
+				{"deathGate": 100, "url": "AnimatedProof/0b.mp4"}]}]},
+		
+		{"name" : "Zuri The Zombie", "image": "Zombie.png", "rewardCount":0, "startVideo": "AnimatedProof/1c.mp4", "gateKeys": [0], "obstacleRewards": [1, 0], "videos": [
+			{"rewardCount": 0, "video": [
+				{"deathGate": 1,"url": "AnimatedProof/1a.mp4" }, 
+				{"deathGate": 100, "url": "AnimatedProof/1b.mp4"}]},
+			{"rewardCount": 1, "video": [
+				{"deathGate": 100, "url":"AnimatedProof/1c.mp4"}]}]}, 
+		
+		{"name" : "Timmy", "image": "Knight.png", "rewardCount":0, "startVideo": "AnimatedProof/2a.mp4", "gateKeys": [0], "obstacleRewards": [0, 0], "videos": [
+			{"rewardCount": 0, "video": [
+				{"deathGate": 1, "url":"AnimatedProof/2a.mp4"}, 
+				{"deathGate": 100, "url":"AnimatedProof/2b.mp4"}]}]}
+	] 
+}
